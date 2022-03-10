@@ -1,6 +1,5 @@
 # Context ACF User Avatar
 
-Stable tag: 1.1  
 Tested up to: 5.9.1  
 Tags: users, user, acf, avatar, gravatar  
 Contributors: robertandrews  
@@ -59,6 +58,14 @@ $avatars_folder = '/users/avatars';         // wp-content/uploads/{sub-folder}
 `$acf_field_key`: the database key corresponding to this field. Find this most easily by using Hookturn's ACF add-on Theme Code Pro, or else by inspecting page source on the Image button.
 
 `$avatars_folder`: path to sub-folder of `/wp-contents/uploads` (eg. `/users/avatars`). Include leading slash but not trailing slah.
+
+## Notes
+
+This plugin stores no database information directly.
+
+The ACF Image field both uplaods an image and sets a database binding between the image object and a User.
+
+However, this plugin only bypasses Gravatar with that upload and just renames and moves the upload file.
 
 ## Acknowledgements
 
