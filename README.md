@@ -59,14 +59,6 @@ $avatars_folder = '/users/avatars';         // wp-content/uploads/{sub-folder}
 
 `$avatars_folder`: path to sub-folder of `/wp-contents/uploads` (eg. `/users/avatars`). Include leading slash but not trailing slah.
 
-## Notes
-
-This plugin stores no database information directly.
-
-The ACF Image field both uplaods an image and sets a database binding between the image object and a User.
-
-However, this plugin only bypasses Gravatar with that upload and just renames and moves the upload file.
-
 ## Acknowledgements
 
 This plugin substantially leverages other people's ingenuity.
@@ -74,3 +66,13 @@ This plugin substantially leverages other people's ingenuity.
 This incorporates Mike Hemberger's code, [ACF Pro For Local Avatars](https://thestizmedia.com/acf-pro-simple-local-avatars/), for bypassing Gravatar with an uploaded image, which was written some time ago.
 
 For neatly naming and organising images, it acknowledges input from ACF support's John Huebner, whose help is always appreciated. Specific input occasions from John are linked in the plugin code.
+
+## Notes
+
+This plugin stores no database information directly.
+
+The ACF Image field, of course, both uploads an image and sets a database binding between the image object and a User.
+
+However, this plugin itself only bypasses Gravatar with that upload and just renames and moves the upload file.
+
+This is only my second substantive GitHub repo, and by far the most formalised so far. I am still learning the ropes on commits, etc. Please excuse faux pas.
