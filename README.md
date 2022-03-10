@@ -53,11 +53,9 @@ $acf_field_key  = 'field_6140a6da30a17';    // key of ACF image field storing Us
 $avatars_folder = '/users/avatars';         // wp-content/uploads/{sub-folder}
 ```
 
-`$acf_field_name`: the "Field Name" you gave your ACF Image field
-
-`$acf_field_key`: the database key corresponding to this field. Find this most easily by using Hookturn's ACF add-on Theme Code Pro, or else by inspecting page source on the Image button.
-
-`$avatars_folder`: path to sub-folder of `/wp-contents/uploads` (eg. `/users/avatars`). Include leading slash but not trailing slah.
+* `$acf_field_name`: the "Field Name" you gave your ACF Image field
+* `$acf_field_key`: the database key corresponding to this field. Find this most easily by using Hookturn's ACF add-on Theme Code Pro, or else by inspecting page source on the Image button.
+* `$avatars_folder`: path to sub-folder of `/wp-contents/uploads` (eg. `/users/avatars`). Include leading slash but not trailing slash. (Reminder: you must already have created this folder).
 
 ## Acknowledgements
 
