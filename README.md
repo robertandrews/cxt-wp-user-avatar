@@ -1,4 +1,4 @@
-# Context ACF User Avatar
+# Context WP User ACF Avatar
 
 Tested up to: 5.9.1  
 Tags: users, user, acf, avatar, gravatar  
