@@ -2,7 +2,7 @@
 /*
 Plugin Name:    Context ACF User Avatar 
 Description:    Use ACF field instead of Gravatar for user avatar, and neatly store those images in folders
-Text-Domain:    cwp-acf-avatar
+Text-Domain:    cxt-user-avatar
 Version:        1.1
 Author:         Robert Andrews
 Author URI:     http://www.robertandrews.co.uk
