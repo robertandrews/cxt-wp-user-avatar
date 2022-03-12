@@ -39,6 +39,7 @@ function prefilter_avatar_upload($errors)
 function modify_avatar_upload_dir($uploads_avatars)
 {
     // here is where we later the path
+    global $avatars_folder;
     $uploads_avatars['path'] = $uploads_avatars['basedir'] . $avatars_folder;
     $uploads_avatars['url'] = $uploads_avatars['baseurl'] . $avatars_folder;
     // $uploads_avatars['subdir'] = 'avatars';
@@ -106,6 +107,9 @@ add_filter('plupload_default_params', function ($params) {
 add_filter('wp_handle_upload_prefilter', 'user_avatar_rename');
 function user_avatar_rename($file)
 {
+
+    global $acf_field_key;
+    
     // Working with $POST contents of AJAX Media uploader
     $theuserid = $_POST['user_id'];         // Passed from user-edit.php via plupload_default_params function
     $acffield  = $_POST['_acfuploader'];    // ACF field key, inherent in $_POST
