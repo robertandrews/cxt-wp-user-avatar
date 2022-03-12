@@ -10,7 +10,6 @@ License:        GPL v2 or later
 License URI:    https://www.gnu.org/licenses/gpl-2.0.html
 */
 
-
 // Settings
 $acf_field_name = 'avatar';                 // name of ACF image field storing User avatars
 $acf_field_key  = 'field_6140a6da30a17';    // key of ACF image field storing User avatars
