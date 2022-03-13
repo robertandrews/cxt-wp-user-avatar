@@ -15,7 +15,6 @@ $acf_field_name = 'avatar';                 // name of ACF image field storing U
 $acf_field_key  = 'field_6140a6da30a17';    // key of ACF image field storing User avatars
 $avatars_folder = '/users/avatars';         // wp-content/uploads/{sub-folder}
 
-
 /**
  * ==============================================================================
  *              FILTER USER AVATAR UPLOADS TO SPECIFIC FOLDER
@@ -34,7 +33,7 @@ function prefilter_avatar_upload($errors)
     return $errors;
 }
 
-// (Old) second filter
+// Second filter
 function modify_avatar_upload_dir($uploads_avatars)
 {
     // here is where we later the path
@@ -45,7 +44,7 @@ function modify_avatar_upload_dir($uploads_avatars)
     return $uploads_avatars;
 }
 
-/*
+/* TODO: Tidy this up
      function avatar_upload_rename( $file ) {
          $file['name'] = 'everything-is-awesome-' . $file['name'];
          return $file;
@@ -54,14 +53,13 @@ function modify_avatar_upload_dir($uploads_avatars)
 
 
 
-
+// TODO: Tidy up / delete this feedback echo
 /**
  * ==============================================================================
  *                              NOTICE
  * ==============================================================================
  */
 
-// TODO: Tidy up custom_user_profile_fields()
 // 0. WHEN EDIT-USER.PHP LOADS, CAPTURE USER_ID
 function custom_user_profile_fields($profileuser)
 {
